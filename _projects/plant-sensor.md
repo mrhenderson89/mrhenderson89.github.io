@@ -1,6 +1,15 @@
 ---
-short_name: plant-sensor
-name: Plant Sensor
-description: A project to read sensor values from a pot plant, to help it grow the best I can
+layout: collection
+title: Plant Sensor
+categories: [Plant Sensor]
+permalink: /:collection/index.html
 ---
-A project to read sensor values from a pot plant, to help it grow the best I can.
+{% assign collection = site.collections | where:"label", page.collection | first %}
+{{ collection.description }}
+
+# Posts
+{% assign sorted = collection.docs | where:"layout", "post" | sort: 'date' %}
+{% for item in sorted %}
+* [{{ item.title }}]({{ item.url }})
+> {{ item.excerpt }}
+{% endfor %}
