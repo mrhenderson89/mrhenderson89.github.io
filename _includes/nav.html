@@ -13,6 +13,15 @@
     <!-- {% endif %} -->
   <!-- {% endfor %} -->
 <!-- </div> -->
+<ul class="listing">
+    {% assign projects = site.projects | where: "featured", "true" | sort: 'featured-priority' %}
+    {% for project in projects %}
+    <li>
+        <h3>{{ project.title }}</h3>
+        <a href="{{ project.url }}">Learn about {{ project.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
   <ul>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}

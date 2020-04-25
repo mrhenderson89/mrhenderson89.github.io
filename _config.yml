@@ -59,15 +59,12 @@ google_analytics:
 # The following settings are NECESSARY for the Prologue theme to run:
 # theme: jekyll-theme-prologue
 remote_theme: chrisbobbe/jekyll-theme-prologue
+permalink: pretty
 collections:
-  plant_sensor:
+  sections:
     output: true
-    title: Plant Sensor Posts
-    title_singular: Plant Sensor
-    description: a collection of stories about the (too) clever grey parrot
-    sequence: 2
-    background_image_url: /assets/P1070812-H800.JPG
-
+  projects:
+    output: true
 
 prose:
   rooturl: ''
