@@ -60,7 +60,13 @@ google_analytics:
 # theme: jekyll-theme-prologue
 remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
-  projects:
+  plant_sensor:
+    output: true
+    title: Plant Sensor
+    title_singular: Plant Sensor
+    description: A project to read sensor values from a pot plant, to help it grow the best I can
+    sequence: 2
+    background_image_url: ""
 
 prose:
   rooturl: ''
