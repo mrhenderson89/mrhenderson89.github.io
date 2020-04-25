@@ -3,7 +3,7 @@ layout: post
 date: '2020-04-25 20:23 +0100'
 author: Ant
 published: false
-categories: Blog
+categories: 'Blog, Plant Sensor'
 meta: Blog
 ---
 ## Testing new blog posts
