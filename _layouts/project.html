@@ -2,23 +2,27 @@
 layout: default
 ---
 
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
-
 {% assign collection_name = page.collection %}
 {% assign collection = site.collections | where:"label", collection_name | first %}
 {% assign posts = site[collection_name] | where:"layout", "post" %}
-{% if posts.size > 0 %}
-<h3>The collection also available</h3>
-
-...<a href="feed.xml" class="rss-subscribe">via RSS</a>
-{% endif %}
+{%- include header.html scrolly_nav=_posts -%}
+<!-- Main -->
+<div id="main">
+	{%- if page.content != "" -%}
+		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+	{%- endif -%}
+	<!-- Posts List -->
+	{%- for _post in _posts -%}
+		{%- capture _title -%}
+			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+		{%- endcapture -%}
+		{%- capture _subtitle -%}
+			{% if _post.author -%}{{- _post.author }} | {% endif %}
+			{{- _post.date | date_to_long_string -}}
+		{%- endcapture -%}
+		{%- capture _excerpt -%}<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
+		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
+		{%- assign _content = _excerpt | append: _link -%}
+		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
+	{%- endfor -%}
+</div>
