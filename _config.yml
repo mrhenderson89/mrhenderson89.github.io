@@ -60,6 +60,13 @@ google_analytics:
 # theme: jekyll-theme-prologue
 remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
+    plant_sensor:
+        output: true
+        title: Plant Sensor
+        title_singular: Plant Sensor
+        description: a collection of stories about the (too) clever grey parrot
+        sequence: 2
+        background_image_url: 
 
 
 prose:
