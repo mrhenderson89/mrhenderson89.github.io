@@ -37,7 +37,7 @@ email: anthenderson89@gmail.com
 avatar: assets/images/profilepic.jpg
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/"
+baseurl: ""
 url: "https://mrhenderson89.github.io"
 
 # Social settings
@@ -87,6 +87,11 @@ prose:
           label: "categories"
           element: "text"
           placeholder: "Enter categories"
+      - name: "tags"
+        field:
+          label: "tags"
+          element: "text"
+          placeholder: "Enter tags"
       - name: "excerpt"
         field:
           label: "excerpt"
