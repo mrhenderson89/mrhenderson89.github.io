@@ -65,6 +65,7 @@ collections:
     output: true
   projects:
     output: true
+    permalink: /projects/:name
 
 prose:
   rooturl: ''
