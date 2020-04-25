@@ -7,7 +7,7 @@ featured-priority: 2
 listing-priority: 2
 ---
 
-{% assign collection = site.collections | where:"category", page.collection | first %}
+{% assign collection = site.collections | where:"label", page.collection | first %}
 {{ collection.description }}
 
 # Posts
