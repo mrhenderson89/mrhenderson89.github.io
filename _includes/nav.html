@@ -5,6 +5,14 @@
 
 <!-- Nav -->
 <nav id="nav">
+<div class="trigger">
+  {% assign collections = site.collections | sort: 'sequence' %}
+  {% for collection in collections %}
+    {% if collection.title %}
+    <a class="page-link" href="{{ collection.label | relative_url }}">{{ collection.title | escape }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
   <ul>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}
