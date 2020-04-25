@@ -60,12 +60,7 @@ google_analytics:
 # theme: jekyll-theme-prologue
 remote_theme: chrisbobbe/jekyll-theme-prologue
 permalink: pretty
-collections:
-  sections:
-    output: true
-  projects:
-    output: true
-    permalink: /projects/:name
+collections: [sections]
 
 prose:
   rooturl: ''
