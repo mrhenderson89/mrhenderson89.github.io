@@ -60,5 +60,51 @@ google_analytics:
 # theme: jekyll-theme-prologue
 remote_theme: chrisbobbe/jekyll-theme-prologue
 permalink: pretty
-collections: [sections]
+collections:
+  sections:
+    output: true
+  projects:
+    output: true
+    permalink: /projects/:name
 
+prose:
+  rooturl: ''
+  siteurl: 'https://mrhenderson89.github.io/'
+  media: 'assets/images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          label: "layout"
+          element: "text"
+          value: "post"
+      - name: "date"
+        field:
+          label: "date"
+          element: "text"
+          value: "CURRENT_DATETIME"
+      - name: "author"
+        field:
+          label: "author"
+          element: "text"
+          value: "Ant"
+      - name: "categories"
+        field:
+          label: "categories"
+          element: "text"
+          placeholder: "Enter categories"
+      - name: "tags"
+        field:
+          label: "tags"
+          element: "text"
+          placeholder: "Enter tags"
+      - name: "excerpt"
+        field:
+          label: "excerpt"
+          element: "text"
+          placeholder: "Enter excerpt"
+      - name: "meta"
+        field:
+          label: "meta"
+          element: "text"
+          placeholder: "Enter metadata"
