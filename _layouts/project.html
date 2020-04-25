@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<article class="post">
+{%- include header.html -%}
+
+<!-- Main -->
+<div id="main">
+	<!-- Page -->
+	<article class="post">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
@@ -13,6 +18,7 @@ layout: default
   </div>
 
 </article>
+</div>
 
 {% assign collection_name = page.collection %}
 {% assign collection = site.collections | where:"label", collection_name | first %}
