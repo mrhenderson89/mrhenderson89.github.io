@@ -11,6 +11,10 @@ layout: default
 	
 	<h1>Filed under {{ page.title }}</h1>
 	
+	{% for post in site.categories[page.title] %}
+		<h2>Author: {{ post.author }}</h2>
+	{% endfor %}
+	
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
 		{%- capture _title -%}
