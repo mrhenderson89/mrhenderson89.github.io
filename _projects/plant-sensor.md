@@ -1,6 +1,6 @@
 ---
 project-id: plant-sensor
-layout: collection
+layout: project
 title: Plant Sensor
 featured: true
 featured-priority: 2
