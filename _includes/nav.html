@@ -52,13 +52,13 @@
       {%- endfor -%}
     {%- endunless -%}
   </ul>
-  <ul class="listing">
-    {% assign projects = site.projects | where: "featured", "true" | sort: 'featured-priority' %}
-    {% for project in projects %}
-    <li>
-        <h3>{{ project.title }}</h3>
-        <a href="{{ project.url }}">{{ project.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+  <!-- <ul class="listing"> -->
+    <!-- {% assign projects = site.projects | where: "featured", "true" | sort: 'featured-priority' %} -->
+    <!-- {% for project in projects %} -->
+    <!-- <li> -->
+        <!-- <h3>{{ project.title }}</h3> -->
+        <!-- <a href="{{ project.url }}">{{ project.title }}</a> -->
+    <!-- </li> -->
+    <!-- {% endfor %} -->
+<!-- </ul> -->
 </nav>
