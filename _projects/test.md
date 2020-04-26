@@ -1,6 +1,6 @@
 ---
 project-id: test
-layout: project
+layout: collection
 title: Test
 featured: true
 featured-priority: 3
