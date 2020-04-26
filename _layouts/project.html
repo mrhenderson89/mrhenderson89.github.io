@@ -12,7 +12,17 @@ layout: default
 	<h1>Filed under {{ page.title }}</h1>
 	
 	{% for post in site.categories[page.title] %}
-		<h2>Author: {{ post.author }}</h2>
+		{%- capture _title -%}
+			<a href="{{- post.url | absolute_url -}}">{{- post.title -}}</a>
+		{%- endcapture -%}
+		{%- capture _subtitle -%}
+			{% if post.author -%}{{- post.author }} | {% endif %}
+			{{- post.date | date_to_long_string -}}
+		{%- endcapture -%}
+		{%- capture _excerpt -%}<p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
+		{%- capture _link -%}<a href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
+		{%- assign _content = _excerpt | append: _link -%}
+		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{% endfor %}
 	
 	<!-- Posts List -->
