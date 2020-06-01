@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "Creating my plant sensor"
-author: john
+author: ant
 categories: [ Plant Sensor ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
+tags: [Plant Sensor]
+image: assets/images/projects/plantsensor/plantsensor1.jpg
+description: "Creating my plant sensor."
 featured: true
 hidden: true
-rating: 4.5
 ---
 
 ## Creating my plant sensor

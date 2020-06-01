@@ -2,34 +2,25 @@
 name: "ant henderson"
 title: "ant henderson"
 description: "My thoughts and ideas. In website form."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
+favicon: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 baseurl: /
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsiteee'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    name: ant
+    display_name: ant
+    gravatar: 4fa7a9c71144a2db6c3b92eb99772438
+    email: anthenderson89@gmail.com
+    web: http://www.ant-henderson.com/
+    twitter: https://twitter.com/MrHenderson89
+    description: "This is my website. These are some thoughts I've had."
 
 # Plugins
 plugins:
