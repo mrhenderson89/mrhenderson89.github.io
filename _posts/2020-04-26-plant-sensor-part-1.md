@@ -6,8 +6,8 @@ categories: [ Plant Sensor ]
 tags: [Plant Sensor]
 image: assets/images/projects/plantsensor/plantsensor1.jpg
 description: "Creating my plant sensor."
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 ## Creating my plant sensor
