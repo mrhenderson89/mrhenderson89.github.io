@@ -6,7 +6,7 @@ logo: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 favicon: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 baseurl: /
 google_analytics: ''
-disqus: ''
+disqus: 'anthenderson'
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
