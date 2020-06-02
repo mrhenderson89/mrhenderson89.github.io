@@ -5,7 +5,7 @@ description: "My thoughts and ideas. In website form."
 logo: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 favicon: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 baseurl: /
-google_analytics: ''
+google_analytics: 'UA-168267216-1'
 disqus: 'anthenderson'
 mailchimp-list: ''
 include: ["_pages"]
