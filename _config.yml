@@ -4,12 +4,12 @@ title: "ant henderson"
 description: "My thoughts and ideas. In website form."
 logo: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
 favicon: 'assets/images/emblemmatic-ant-henderson-logo-43.png'
-baseurl: /
 google_analytics: 'UA-168267216-1'
 disqus: 'anthenderson'
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
+url: "http://www.ant-henderson.com/
 
 # Authors
 authors:
