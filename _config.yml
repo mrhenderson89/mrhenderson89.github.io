@@ -9,7 +9,7 @@ disqus: 'anthenderson'
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
-url: "http://www.ant-henderson.com/
+url: "http://www.ant-henderson.com/"
 
 # Authors
 authors:
